@@ -1,0 +1,24 @@
+{
+  "name": "skill_swap",
+  "version": "1.0.0",
+  "description": "A skill sharing platform",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "team-4",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "connect-pg-simple": "^10.0.0",
+    "connect-redis": "^8.0.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "leaflet": "^1.9.4",
+    "mysql2": "^3.11.4",
+    "pg": "^8.14.0",
+    "redis": "^4.7.0"
+  }
+}
