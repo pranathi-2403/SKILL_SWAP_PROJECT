@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EH - Explore</title>
+    <!-- css linking -->
+    <link rel="stylesheet" href="../css/explore.css">
+    <link rel="stylesheet" href="../css/alerts.css">
+</head>
+
+<body>
+    <!-- alert message popup  -->
+    <div id="alert">message</div>
+
+    <!-- navbar  -->
+    <header>
+        <div class="logo">
+            <img class="image1" src="../images/empowerhub-logo.png" alt="logo">
+        </div>
+        <h1>EmpowerHub Welcomes You!</h1>
+        <button class="logout" onclick="window.location.href='/views/index.html'">Back</button>
+    </header>
+
+    <!-- categories -->
+    <h2 class="head">Categories:</h2>
+    <div class="ski">
+        <h3>Lifestyle</h3>
+        <div class="sk2">
+            <div class="img1" style="background: url('../images/home_img/Life\ Skills.png') no-repeat center/cover">
+            </div>
+            <p>Lifestyle skills encompass the abilities that help individuals navigate e
+                veryday life effectively, ensuring personal well-being and growth. These skills range from managing time
+                efficiently, cooking nutritious meals, and maintaining financial discipline to practicing good hygiene.
+            </p>
+        </div>
+    </div>
+    <div class="ski">
+        <h3>Business</h3>
+        <div class="sk2">
+            <div class="img1" style="background: url('../images/home_img/buisiness.jpg') no-repeat center/cover"></div>
+
+            <p>Business skills revolve around the strategies and knowledge needed to operate or manage a business
+                successfully. They include leadership, marketing, financial planning, effective communication, and
+                project management, all of w
+                hich are crucial.</p>
+        </div>
+    </div>
+    <div class="ski">
+        <h3>technical</h3>
+        <div class="sk2">
+            <div class="img1" style="background: url('../images/home_img/technical.jpg') no-repeat center/cover"></div>
+            <p>Technical skills are specialized competencies that enable individuals to perform specific tasks in fields
+                like programming, data analysis, engineering, or operating machinery. Thes
+                e skills often require formal training and are essential in today’s world.</p>
+        </div>
+    </div>
+
+    <div class="ski">
+        <h3>Sports and games</h3>
+        <div class="sk2">
+            <div class="img1" style="background: url('../images/home_img/games.jpg') no-repeat center/cover"></div>
+            <p>sports involve physical prowess, strategy, and teamwork, fostering fitness, discipline, and camaraderie
+                while encouraging a competitive spirit. Together, these skill categories enrich personal and
+                professional lives, offering
+                avenues for expression, growth, and connection.</p>
+        </div>
+    </div>
+    <div class="ski">
+        <h3>Craft and Arts</h3>
+        <div class="sk2">
+            <div class="img1" style="background: url('../images/home_img/craft.jpg') no-repeat center/cover"></div>
+            <p>Arts and crafts highlight creativity and manual dexterity, allowing individuals to create beautiful and
+                functional objects, whether through painting, sculpting, sewing, or woodworking. These skills often
+                combine imagination with technical proficiency.</p>
+        </div>
+    </div>
+    <div class="ski">
+        <h3>Dance</h3>
+        <div class="sk2">
+            <div class="img1" style="background: url('../images/home_img/dance.jpg') no-repeat center/cover"></div>
+            <p>Dance is an expressive art form where movement and rhythm come together to convey emotions, tell stories,
+                or entertain audiences. It requires physical discipline, coordination, and creativity.</p>
+        </div>
+    </div>
+    <div class="ski">
+        <h3>Music</h3>
+        <div class="sk2">
+            <div class="img1" style="background: url('../images/home_img/music.jpg') no-repeat center/cover"></div>
+            <p>Music skills encompass playing instruments, singing, and composing, requiring a deep understanding of
+                rhythm, melody, and harmony.
+                They also include technical abilities like music production and performance skills to engage and
+                captivate audiences.</p>
+        </div>
+    </div>
+    <div class="ski">
+        <h3>Drama</h3>
+        <div class="sk2">
+            <div class="img1" style="background: url('../images/home_img/drama.avif') no-repeat center/cover"></div>
+            <p>Drama skills involve acting, voice modulation, and emotional expression to bring characters and stories
+                to life. They include script analysis, improvisation, and stage presence, requiring creativity and
+                collaboration with others. These skills help performers captivate audiences .</p>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+        <p>&copy; 2024 Skill Share. All rights reserved.</p>
+        <a href="/terms">Terms of Service</a>
+        <a href="/contact">Contact Us</a>
+    </footer>
+
+    <!-- signin box -->
+    <div class="signme" id="signin-modal">
+        <div class="signin-container">
+            <h2>Sign In</h2>
+            <form action="/login" method="post" id="signinForm">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Sign In</button>
+            </form>
+            <a href="/forgot-password">Forgot Password?</a>
+            <a href="signup.html"> Don't have account? Create an Account</a>
+        </div>
+    </div>
+
+</body>
+<!-- javascript linking  -->
+<script src="../script/explore.js"></script>
+
+</html>

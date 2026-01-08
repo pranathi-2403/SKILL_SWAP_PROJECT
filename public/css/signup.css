@@ -1,0 +1,187 @@
+/* body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* navbar styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(237 237 127);
+    color: white;
+    padding: 5px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navBtn {
+    display: flex;
+    justify-content: right;
+}
+
+.image1 {
+    height: 60px;
+    margin-top: 10px;
+
+}
+
+.signin {
+    display: flex;
+    gap: 10px;
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 39px;
+    font-weight: bold;
+}
+
+.signin:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+.exploreBtn {
+    display: flex;
+    gap: 10px;
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.exploreBtn:hover {
+    background-color: #45a049;
+
+}
+
+.exploreLink {
+    text-decoration: none;
+    color: #4CAF50;
+
+}
+
+.exploreLink:hover {
+    color: white;
+}
+
+/* main styling */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* register styling */
+.register-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-container button:hover {
+    background-color: #218838;
+}
+
+.register-container a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+.register-container h3 {
+    color: rgb(192, 129, 52);
+    text-align: center;
+}
+
+/* footer styling */
+.back {
+    position: fixed;
+    top: 50px;
+    left: 80%;
+    text-decoration: none;
+}
+
+.back a {
+    text-decoration: none;
+}
+
+/* error popup styling */
+#errorMessage {
+    display: none;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    padding: 8px 10px;
+}
+
+.error {
+    color: red;
+    background-color: rgb(248, 174, 174);
+    border: 1px solid rgb(185, 91, 91);
+}
+
+.warning {
+    color: rgb(195, 141, 40);
+    background-color: rgb(248, 227, 174);
+    border: 1px solid rgb(184, 171, 109);
+}
+
+/* map styling  */
+#map {
+    height: 400px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}

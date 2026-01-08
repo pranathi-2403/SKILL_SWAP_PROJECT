@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EH - Profile</title>
+    <!-- css linking  -->
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+
+<body>
+    <!-- alert message popup  -->
+    <div id="Message">message</div>
+
+    <!-- navbar  -->
+    <header>
+        <div class="logo">
+            <img class="image1" src="../images/empowerhub-logo.png" alt="logo">
+        </div>
+
+        <h1>User profile Page</h1>
+        <div class="btnContainer">
+            <button class="homeBtn" onclick="window.location.href='/views/home_page.html'">Home</button>
+            <button id="bt1">Edit details</button>
+
+        </div>
+    </header>
+
+    <div class="main">
+        <!-- display profile  -->
+        <div class="main2">
+            <p id="user_name"> Name:leesha</p>
+            <p id="user_phone"> Phone Number:90861752</p>
+            <p id="user_email"> email:kjghta@gmail.com</p>
+            <p id="user_address"> Address:something uru </p>
+        </div>
+    </div>
+    <!-- popup when clicked on edit details  -->
+    <div class="show1" id="sh1">
+        <div class="show">
+            <button class="change" id="name">Change your Name</button>
+            <button class="change" id="phone">Change your Phone number</button>
+            <button class="change" id="address">Change your Address</button>
+            <button class="change" id="pass">Change your password</button>
+        </div>
+    </div>
+    <!-- dialog box to change name  -->
+    <div id="name1" class="changename1">
+        <div class="changename">
+            <h2>Edit Your Name</h2>
+            <form action="/getUser/name" id="nameForm">
+                <p>Enter your correct name</p>
+                <input name='inputName' type="text" placeholder="Name" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- dialog box to change phone number -->
+    <div id="phone1" class="changename1">
+        <div class="changename">
+            <h2>Edit Your Phone Number</h2>
+            <form action="/getUser/phone" id="phoneForm">
+                <p>Enter your Phone Number</p>
+                <input name="inputPhone" type="text" placeholder="phone number" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- dialog box to change address  -->
+    <div id="addr1" class="changename1">
+        <div class="changename">
+            <h2>Edit Your Address </h2>
+            <form action="/getUser/address" class="add_form" id="addressForm">
+                <p>Enter your correct Address</p>
+                <!-- <input type="text" placeholder="Address" required> -->
+                <textarea id="address" name="inputAddress" rows="4" cols="45"
+                    placeholder="Enter your full address here..." required></textarea>
+                <!-- Hidden inputs for latitude and longitude -->
+                <input type="hidden" name="latitude" id="latitude">
+                <input type="hidden" name="longitude" id="longitude">
+                <!-- map  -->
+                <p>Select your location on the map</p>
+                <div id="map"></div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- dialog box to change password  -->
+    <div id="pass1" class="changename1">
+        <div class="changename">
+            <h2>Edit Your Password </h2>
+            <form action="/getUser/password" id="passwordForm">
+                <p>Enter your current password</p>
+                <input name="inputCurrentPassword" type="password" placeholder=" current password" required>
+                <p>Enter your new password</p>
+                <input name="inputPassword" type="password" placeholder=" new password" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+<!-- javascript linking  -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="../script/profile.js"></script>
+
+</html>

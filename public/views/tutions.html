@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EH - Tutions</title>
+    <!-- css linking  -->
+    <link rel="stylesheet" href="../css/tutions.css">
+    <link rel="stylesheet" href="../css/alerts.css">
+
+</head>
+
+<body>
+    <!-- alert message popup  -->
+    <div id="alert">message</div>
+
+    <!-- navbar  -->
+    <header>
+        <div class="logo">
+
+            <img class="image1" src="../images/empowerhub-logo.png" alt="logo">
+        </div>
+        <h3 id="insertName">name of user</h3>
+        <div class="btnCont">
+            <button class="homeBtn" onclick="window.location.href='/views/home_page.html'">Home</button>
+        </div>
+    </header>
+
+    <h2 class="h2">Skills which you are Sharing</h2>
+    <div class="inf">
+        <p id="insertHey">Hey [User]</p>
+        <p>This a nice platform to teach your skills to others and improve yourself.</p>
+        <p>Here you can add the skills which you would like to teach</p>
+        <p>You can also add or delete the class timings and see the students who are enrolled in the class</p>
+    </div>
+
+    <!-- container where tutions are displayed -->
+    <div class="toteach">
+        <p id="para"></p>
+        <!-- <div class="sub">
+            <h2>Skill name1</h2>
+            
+            <p>Center:Jayalaxmipura</p>
+            <div class="timings">
+                <div class="times">
+                    <p>Date:12/11/2024</p>
+                    <p>timings:7:00 pm-8:00 pm</p>
+                    <div class="button-container">
+                        <button class="but cancel">Cancel tution</button>
+                        <button class="but view">view students</button>
+                    </div>
+                </div>
+                <div class="times">
+                </div>
+                <div class="times">
+                </div>
+                
+            </div>
+            <div class=divbutt>
+                <button class="but">Add class</button>
+                <button class="butu">Add class</button>
+                <button class="butu">prequisites</button>
+            </div>
+            
+        </div> -->
+
+    </div>
+
+    <button class="bu"><a href="../views/add_tution.html">add tution</a></button>
+
+    <!-- display prerequisites -->
+    <div id="prere" class="changename1">
+        <div class="changename">
+            <h2 id="preHead">SEE PREREQUISITES OF SKILL </h2>
+            <div class="premain" id="premain">
+                <!-- <div class="presec">
+                    <p> something 1 </p>
+                    <button class="butu2">delete</button>
+                </div>
+                <div class="presec">
+                    <p> something 1 </p>
+                    <button class="butu2">delete</button>
+                </div>
+                <div class="presec">
+                    <p> something 1 </p>
+                    <button class="butu2">delete</button>
+                </div> -->
+            </div>
+            <button id="addpre" class="changebutton">Add</button>
+
+
+        </div>
+    </div>
+
+    <!-- add prerequisites -->
+    <div id="addpage" class="changename1">
+        <div class="changename">
+            <h2>Add prerequisites</h2>
+
+            <form action="/prerequisite" id="prerequisiteForm" method='POST'>
+                <p>Enter the name of skill to be visited</p>
+                <input type="text" id="prereq" placeholder="prerequisite" name="description">
+                <input type="hidden" name="skillId" id="prereSkillId">
+                <button class="changebutton" type="submit" id="prereSubmit">Submit</button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- container to add new class  -->
+    <div id="addr1" class="changename1">
+        <div class="changename">
+            <h2>Add new Class </h2>
+            <form action="/class" id="addClassForm" method="POST">
+                <p>Enter Date</p>
+                <input type="date" id="dateInput" placeholder="date" name="date">
+                <p class="para">Enter the start time</p>
+                <input class="time" type="time" name="startTime" placeholder="start-time" required>
+                <p class="para">Enter the End time</p>
+                <input class="time" type="time" name="endTime" placeholder="end-time" required>
+                <input type="hidden" name="skillId" value="none" id="skillInput">
+                <button type="submit" id="addClassSubmit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Form to edit skill details  -->
+    <div id="edit" class="changename1">
+        <div class="changename" id="editInside">
+            <h2>Edit skill Details </h2>
+            <form id="editForm">
+                <p>Edit Skill Name</p>
+                <input type="text" id="skillname" placeholder="skill name" name="name">
+                <p class="para">Edit skill description</p>
+                <textarea class="inp" name="description" rows="2" cols="49" placeholder="Description"
+                    required> </textarea>
+                <input type="hidden" name="skill_id" id="editSkillId">
+
+                <button type="submit" id="editSubmit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+<!-- javascript linking  -->
+<script src="../script/tutions.js"></script>
+
+</html>

@@ -1,0 +1,92 @@
+<!-- register page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EH - Tution Form</title>
+    <!-- css linking -->
+    <link rel="stylesheet" href="../css/add_tuition.css">
+    <link rel="stylesheet" href="../css/alerts.css">
+
+</head>
+
+<body>
+    <!-- alert message popup -->
+    <div id="alert">message</div>
+
+    <!-- navbar -->
+    <header class="nav">
+        <div class="logo">
+            <img class="image1" src="../images/empowerhub-logo.png" alt="logo">
+        </div>
+
+        <div class="navBtn">
+            <button class="signin" id="btn" onclick="window.location.href='../views/home_page.html'">Home</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- form to add tution  -->
+        <div class="register-container">
+            <h2 class="h2">Add Tution</h2>
+            <form id="tutionForm" action="/skill" method="post">
+                <h3>Welcome to our community<h3>
+                        <h5>Note:you can add only one Skill class at once</h5>
+    
+                        <!-- select category radio buttons -->
+                        <p class="para">Select skill below:</p>
+                        <div class="ski">
+                            <label>
+                                <input type="radio" name="cid" value="c001">Lifestyle
+                            </label>
+                            <label>
+                                <input type="radio" name="cid" value="c002"> Business
+                            </label>
+                            <label>
+                                <input type="radio" name="cid" value="c005">Music
+                            </label>
+                            <label>
+                                <input type="radio" name="cid" value="c004"> Technical
+                            </label>
+                            <label>
+                                <input type="radio" name="cid" value="c006">Sports
+                            </label>
+                            <label>
+                                <input type="radio" name="cid" value="c003">Art & Craft
+                            </label>
+    
+                            <label>
+                                <input type="radio" name="cid" value="c007">Dance
+                            </label>
+                            <label>
+                                <input type="radio" name="cid" value="c008">Drama
+                            </label>
+    
+    
+                        </div>
+    
+                        <p class="para">Enter the skill Name:</p>
+                        <input type="text" name="name" placeholder="skillname" required>
+                        <p class="para">Enter the Date:</p>
+                        <input class="date" type="date" name="date" placeholder="date" required>
+                        <p class="para">Enter the start time:</p>
+                        <input class="time" type="time" name="startTime" placeholder="start-time" required>
+                        <p class="para">Enter the End time:</p>
+                        <input class="time" type="time" name="endTime" placeholder="end-time" required>
+                        <p class="para">Enter the skill Description:</p>
+                        <textarea class="inp" name="description" rows="2" cols="49" placeholder="Description"
+                            required> </textarea>
+    
+                        <button id="me" type="submit">Submit</button>
+            </form>
+        </div>
+
+    </main>
+
+</body>
+<!-- javascript linking  -->
+<script src="../script/add_tution.js"></script>
+
+</html>

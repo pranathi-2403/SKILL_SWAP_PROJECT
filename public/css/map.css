@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    background-color: rgb(178, 231, 213, 0.2);
+}
+
+.image1 {
+    height: 60px;
+    margin-top: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(235, 177, 186);
+    background-color: #f3f399;
+    color: rgba(13, 32, 7, 0.9);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header button {
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+header button:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+#map {
+    height: 630px;
+}
+
+/* Remove the default padding and background from the divIcon */
+.leaflet-div-icon {
+    background: transparent !important;
+    border: none !important;/* Remove default borders */
+    box-shadow: none !important;/* Remove any shadow */
+    padding: 0 !important;/* Remove default padding */
+    margin: 0 !important;/* Remove default margin */
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* Circle marker style */
+.leaflet-div-icon .circle {
+    background-color: rgb(145 229 171);
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(77 132 64);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transform: rotate(45deg);
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+}

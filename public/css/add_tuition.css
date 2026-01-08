@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    margin: 0;
+}
+
+/* navbar styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(237 237 127);
+    color: white;
+    padding: 5px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navBtn {
+    display: flex;
+    justify-content: right;
+}
+
+.image1 {
+    height: 60px;
+    margin-top: 10px;
+
+}
+
+.signin {
+    display: flex;
+    gap: 10px;
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 39px;
+    font-weight: bold;
+}
+
+.signin:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+/* main styling */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px;
+}
+
+.register-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-container button {
+    width: 90%;
+    padding: 10px;
+    background-color: rgb(230, 230, 99);
+    color: #201f1f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.register-container button:hover {
+    background-color: #b9e764;
+    color: #201f1f;
+}
+
+.register-container a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+.register-container h3 {
+    color: rgb(192, 129, 52);
+    text-align: center;
+}
+
+.ski {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 382px;
+    padding-left: 1px;
+}
+
+.ski label {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.ski input[type="radio"] {
+    margin-right: 3px;
+}
+
+.checkb {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 382px;
+    padding-left: 1px;
+}
+
+.checkb label {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.checkb input[type="radio"] {
+    margin-right: 3px;
+}
+
+.para {
+    margin: 5px;
+    font-size: large;
+}
+
+h5 {
+    margin: 5px;
+    color: #007bff;
+    font-size: 17px;
+}
+
+.time {
+    font-size: large;
+}

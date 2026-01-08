@@ -1,0 +1,29 @@
+#alert{
+    display: none;
+    text-align: center;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    padding: 8px 10px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.error{
+    color: rgb(154, 57, 57);
+    background-color: rgb(248, 174, 174);
+    border: 1px solid rgb(185, 91, 91);
+}
+
+.warning{
+    color: rgb(195, 141, 40);
+    background-color: rgb(248, 227, 174);
+    border: 1px solid rgb(184, 171, 109);
+}
+
+.success {
+    color: green;
+    background-color: rgb(194, 248, 174);
+    border: 1px solid rgb(133, 185, 91);
+}

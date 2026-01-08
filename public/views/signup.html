@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking css  -->
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+    <title>EH - Registration Form</title>
+</head>
+
+<body>
+    <!-- alert message popup  -->
+    <div id="errorMessage">error</div>
+
+    <!-- navbar -->
+    <header class="nav">
+        <div class="logo">
+            <img class="image1" src="../images/empowerhub-logo.png" alt="logo">
+        </div>
+
+        <div class="navBtn">
+            <button class="signin" id="btn" onclick="window.location.href='../views'">Back</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- registration form  -->
+        <div class="register-container">
+            <h2>Register</h2>
+
+            <form id="registerForm" method="post" action="/signup">
+                <h3>Welcome to our community</h3>
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Phone number" required pattern="\d{10}">
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <input type="text" name="address" placeholder="Address" required>
+
+                <!-- Hidden inputs for latitude and longitude -->
+                <input type="hidden" name="latitude" id="latitude">
+                <input type="hidden" name="longitude" id="longitude">
+
+                <!-- map  -->
+                <p>Select your location on the map</p>
+                <div id="map"></div>
+
+                <button type="submit" id="submitButton">Register</button>
+            </form>
+            <a href="/views/signin.html">Already have an account? Log in</a>
+        </div>
+
+    </main>
+
+    <!-- linking javascript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../script/signup.js"></script>
+</body>
+
+</html>

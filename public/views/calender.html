@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EH - Calendar</title>
+  <link rel="stylesheet" href="../css/calender.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <header class="nav">
+    <div class="logo">
+      <img class="image1" src="../images/empowerhub-logo.png" alt="logo">
+    </div>
+
+    <div class="navBtn">
+      <button class="homeBtn" onclick="window.location.href='/views/home_page.html'">Home</button>
+    </div>
+
+  </header>
+
+  <div class="info">
+    <div class="dotContainer">
+      <div class="teachDot"></div>Classes which you are teaching
+      <div class="learnDot" style="margin-left: 10px;"></div>Skills which you are learning
+    </div>
+  </div>
+
+  <!-- calender container  -->
+  <div class="cal-container">
+    <!-- calendar -->
+    <div class="calendar">
+      <div class="header">
+        <button id="prev" class="arrow"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" fill="#000000">
+            <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
+          </svg></button>
+        <h2 id="month-year"></h2>
+        <button id="next" class="arrow"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" fill="#000000">
+            <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+          </svg></button>
+      </div>
+      <div class="weekdays">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+      <div class="days" id="days"></div>
+    </div>
+
+    <!-- schedule container -->
+    <div class="schedule-container" id="schedule-container">      
+      <p>Click on a date to view classes</p>
+      <!-- <div class="appointment teach">
+            <h4>Pottery class</h4>
+            <p>Start:9:00</p>
+            <p>End:10:00</p>
+            
+            <p>Location:abc street</p>
+          </div> -->
+    </div>
+
+  </div>
+
+  <script src="../script/calender.js"></script>
+</body>
+
+</html>

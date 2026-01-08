@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css linking -->
+    <link rel="stylesheet" href="../css/welcome.css">
+    <link rel="stylesheet" href="../css/alerts.css">
+
+    <title>EmpowerHub - Welcome</title>
+
+</head>
+
+<body>
+    <!-- alert message popup -->
+    <div id="alert">message</div>
+    
+    <!-- navbar -->
+    <header class="nav">
+        <div class="logo">
+            <img class="image1" src="../images/empowerhub-logo.png" alt="logo">
+        </div>
+
+        <div class="navBtn">
+            <a class="exploreLink" href="./explore.html">Explore</a>
+            <button class="signin" id="btn">Sign In</button>
+        </div>
+    </header>
+
+    <!-- content -->
+    <div class="body-content">
+        <!-- introduction  -->
+        <div class="intro-section">
+
+            <h1>Welcome to our skill empowering web platform!</h1>
+            <p>EmpowerHub is your gateway to a world of shared knowledge and growth. Our platform brings together
+                passionate individuals to share their skills, learn from others, and build meaningful connections
+                within a vibrant community.
+            </p>
+            <p>
+                Whether you're looking to teach a skill, pick up something new, or simply connect with
+                like-minded
+                people, EmpowerHub offers the perfect space to grow and thrive. With "empowering minds" as our
+                mission and "connecting communities" as our essence, we believe in creating a network where
+                everyone
+                can inspire and be inspired.
+
+            </p>
+
+            <p>Join EmpowerHub - where skills and connections create endless possibilities!</p>
+
+        </div>
+
+        <!-- information -->
+        <div class="info-section">
+            <p>EmpowerHub lets you share your skills as a tutor or learn from others as a tutee. Connect, grow, and
+                thrive in a community built for knowledge exchange and empowerment!</p>
+
+            <div class="tt">
+                <!-- tutor  -->
+                <div class="tutor">
+                    <div class="tutor-info">
+                        <h3>Tutor</h3>
+                        <p>As a tutor on EmpowerHub, you have the opportunity to make a lasting impact on your community
+                            by sharing your expertise and empowering others to succeed. By offering your skills, you
+                            help others build confidence, enhance their abilities, and achieve their goals. Your
+                            guidance can open doors to new opportunities for learners and inspire them to pay it
+                            forward. Every lesson you teach fosters a culture of growth and collaboration, strengthening
+                            the bonds within the community. Through your dedication, you contribute to a cycle of
+                            continuous learning, uplifting individuals and creating a positive, supportive environment
+                            for all.</p>
+
+                    </div>
+                    <div class="tutor-image">
+                        <img src="../images/tutor.jpg" alt="tutor">
+
+                    </div>
+                </div>
+
+                <!-- tutee  -->
+                <div class="tutee">
+                    <div class="tutee-image">
+                        <img src="../images/tutee.jpg" alt="tutor">
+
+                    </div>
+                    <div class="tutee-info">
+                        <h3>Tutee</h3>
+                        <p>As a tutee on EmpowerHub, you have access to a wealth of knowledge from diverse tutors,
+                            allowing you to learn new skills and broaden your horizons. Whether you're looking to
+                            enhance your professional abilities, explore a personal passion, or simply grow in
+                            confidence, the platform offers countless opportunities for growth. By engaging with
+                            experienced tutors, you gain personalized guidance, practical insights, and the support you
+                            need to succeed. As a tutee, you're not just gaining knowledge—you’re becoming part of a
+                            community dedicated to lifelong learning, empowering you to reach your full potential and
+                            make meaningful progress.</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Slideshow -->
+        <div class="slideshow-section">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="../images/pic1.png" alt="Slide 1">
+                    
+                </div>
+                <div class="mySlides">
+                    <img src="../images/pic2.png" alt="Slide 2">
+                    
+                </div>
+                <div class="mySlides">
+                    <img src="../images/pic3.png" alt="Slide 3">
+                    
+                </div>
+                <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a> -->
+            </div>
+
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </div>
+        <!--end of slideshow-->
+
+        <!-- cards-section  -->
+        <div class="container">
+            <section class="body-content1">
+
+                <div class="body1">
+                    <div class="first">
+                        <h3>Share Your Expertise:
+                        </h3>
+                        <p>EmpowerHub allows you to share your skills with others and make a meaningful difference.
+                            Whether it’s teaching a professional skill or a personal hobby, you can help others grow</p>
+                    </div>
+
+                    <div class="first">
+                        <h3> Learn New Skills:
+                        </h3>
+                        <p>With EmpowerHub, you can connect with experienced tutors to boost your career, or explore
+                            personal interests. Access personalized lessons and practical guidance tailored to your
+                            learning goals.</p>
+                    </div>
+
+                    <div class="first">
+                        <h3>Connect with Community:</h3>
+                        <p>EmpowerHub is more than just a platform for learning—it’s a thriving community. Engage with
+                            tutors and learners, share ideas, and collaborate to foster continuous growth. </p>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- footer  -->
+        <footer>
+            <div>
+                <a href="#">Contact Us</a>
+                <a href="#">Email</a>
+                <a href="#">Help Center</a>
+            </div>
+            <div>
+                <a href="#">Feedback</a>
+                <a href="#">Rating</a>
+            </div>
+            <div>
+                <a href="#">How it Works</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </footer>
+
+        <!-- signin popup dialog box -->
+        <div class="signme" id="signin-modal">
+            <div class="signin-container">
+                <h2>Sign In</h2>
+                <form action="/login" method="post" id="signinForm">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Sign In</button>
+                </form>
+                <a href="/forgot-password">Forgot Password?</a>
+                <a href="signup.html"> Don't have account? Create an Account</a>
+            </div>
+        </div>
+
+        <!-- javascript linking  -->
+        <script src="../script/welcome.js"></script>
+</body>
+
+</html>
